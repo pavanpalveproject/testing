@@ -11,7 +11,7 @@ pipeline {
         stage(test){
             steps{
                 script(){
-                    sh 'echo branch'
+                    sh 'echo ${branch}'
                 }
             }
         }
