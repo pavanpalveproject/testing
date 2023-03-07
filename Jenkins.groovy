@@ -3,9 +3,7 @@ def base_path = "gcp-op-as-infra-saas"
 pipeline {
   agent any
 
-  environment{
-        
-    }
+  
 
     stages{
         stage(test){
