@@ -4,7 +4,7 @@ pipeline {
   agent any
 
   environment{
-        branch = "$params.Env"
+        branch = env.BRANCH_NAME
     }
 
     stages{
