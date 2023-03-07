@@ -10,8 +10,8 @@ pipeline {
             steps{
                 script(){
                     checkout scm
-                    branch = env.BRANCH_NAME
-                    sh 'echo ${branch}'
+                    // branch = env.BRANCH_NAME
+                    sh 'echo env.BRANCH_NAME'
                 }
             }
         }
