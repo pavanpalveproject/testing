@@ -4,13 +4,15 @@ pipeline {
   agent any
 
   environment{
-        branch = env.BRANCH_NAME
+        
     }
 
     stages{
         stage(test){
             steps{
                 script(){
+                    checkout scm
+                    branch = env.BRANCH_NAME
                     sh 'echo ${branch}'
                 }
             }
